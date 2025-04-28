@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import TaskCard from './TaskCard';
 import LogoutBtn from './LogoutButton';
-import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
+import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 
 function Dashboard() {
-  const apiUrl = import.meta.env.VITE_API_BASE_URL;
+
   const [user, setUser] = useState();
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState({

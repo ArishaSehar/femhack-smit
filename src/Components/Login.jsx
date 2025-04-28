@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
+import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 
 const Login = () => {
   const apiUrl = import.meta.env.VITE_API_BASE_URL;
